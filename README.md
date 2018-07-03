@@ -25,3 +25,14 @@ Get Historical Daily Data Stock Data: getHistStock.py {stocksymbol}
 In DB Table with followed people "people"
 Crontab sync new tweets every.... with Script ...
 if a company is found the minutely based syncing of Brand and refering Sector Data based on Stocksymbol is started getSectorData.py getStockData.py
+
+<b>Viualisation in Tableau</b><br>
+Calculation of  running standard deviation 
+<t>WINDOW_AVG(AVG([vol]), -20, 0)+WINDOW_STDEV(AVG([vol]), -20, 0)
+
+<b>Visualisation in python</b><br>
+Automating plots with numpy and matplotlib 
+Scripts:
+main.py
+visualisation.py
+sql.py
