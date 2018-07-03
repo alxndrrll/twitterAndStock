@@ -4,7 +4,7 @@ During a project at HTW Berlin my team Kristina Spiegel and Alexander Röll crea
 Have tweets impacted the share price of a company?
 
 USWS HTW Berlin SoSe 2018 Group: 
-<ul>Kristina Spiegel, s0553423@htw-berlin.de Alexander Röll, s0554705@htw-berlin.de Kalina Sperber, s0554634@htw-berlin.de
+Kristina Spiegel, s0553423@htw-berlin.de Alexander Röll, s0554705@htw-berlin.de Kalina Sperber, s0554634@htw-berlin.de
 
 <b>Used Stack while Development</b>: <br>
 Ubuntu Server: Server version: 5.7.22-0ubuntu0.16.04.1 
@@ -17,7 +17,8 @@ SetUp Create Database and Basic Data (e.g. Sectors & Companies) with "create.py"
 
 <b>Historical Analysis</b> <br>
 
-Get Historical Daily Data Stock Data: /home/sperber/anaconda3/bin/python3 getHistStock.py HOG
+Get Historical Daily Data Stock Data: getHistStock.py {stocksymbol}
+
 
 <b>Automatize Scripts </b> <br>
 
