@@ -3,8 +3,13 @@ During a project at HTW Berlin my team Kristina Spiegel and Alexander Röll crea
 
 USWS HTW Berlin SoSe 2018 Group: Kristina Spiegel, s0553423@htw-berlin.de Alexander Röll, s0554705@htw-berlin.de Kalina Sperber, s0554634@htw-berlin.de
 
--------- All files are in Folder "scripts"------ How to run a python script add the path for python: /home/sperber/anaconda3/bin/python3
+<b>Used Stack while Development</b>: 
+Ubuntu Server: Server version: 5.7.22-0ubuntu0.16.04.1 
+Mysql Database: mysql  Ver 14.14 Distrib 5.7.22, for Linux (x86_64) using  EditLine wr
+Python 3.5.2
 
+
+-------- All files are in Folder "scripts"------ 
 SetUp Create Database and Basic Data (e.g. Sectors & Companies) with "create.py" and "fill.py"
 
 ---------Historical Analysis--------------------
