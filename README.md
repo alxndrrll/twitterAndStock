@@ -1,3 +1,6 @@
+-------------------Unfinished Version------------------------
+We are just updating the last links, so wait maybe a day or 2 until you clone<br>
+
 <b>twitterAndStock</b><br>
 <br>
 During a project at HTW Berlin my team Kristina Spiegel and Alexander Röll created a projekt to see if tweets could impact the stock market. 
