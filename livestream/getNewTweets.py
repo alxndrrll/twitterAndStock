@@ -12,7 +12,6 @@ import subprocess
 import shlex
 import time
 import re
-import sqlite3
 import mysql.connector
 from mysql.connector import errorcode
 from tweepy.streaming import StreamListener
@@ -24,7 +23,7 @@ import sys
 
 # mysql conntection
 
-cnx=mysql.connector.connect(user='root',password='HTW-Berlin',host='localhost',database='stock')
+cnx=mysql.connector.connect(user='###',password='###',host='localhost',database='stock')
 cursor = cnx.cursor()
 cnx.database ='stock'
 
