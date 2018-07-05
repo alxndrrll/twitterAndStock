@@ -14,10 +14,13 @@ import sys
 from bs4 import BeautifulSoup
 
 #######build connector#######################
-cnx=mysql.connector.connect(user='root',password='HTW-Berlin',host='localhost',database='stock')
-cursor = cnx.cursor()
-cnx.database ='stock'  
+symbol=sys.argv[1]
+#Generate your own key as described in the read.me
+API_KEY = '###' 
 
+
+cnx=mysql.connector.connect(user='###',password='###',host='localhost',database='stock')
+cursor = cnx.cursor()
 ##############get sector Data##############################
 
 def getSectorByBrand(symbol):
@@ -54,7 +57,6 @@ def getSectorData(sector_name, sectornumber):
     cursor.execute(sql_command)
     cnx.commit()
 
-symbol=sys.argv[1]
 print(symbol)
 sectornumber, sector_name= getSectorByBrand(symbol)
 print(sector_name )
