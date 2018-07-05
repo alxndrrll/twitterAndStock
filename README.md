@@ -7,7 +7,7 @@ We are just updating the last links, so wait maybe a day or 2 until you clone<br
 <br>
 During a project at HTW Berlin my team <b>Kristina Spiegel and Alexander Röll</b> created a projekt in 'Unternehmenssoftware' to see if tweets could impact the stock market. <br>
 
-<h1> Have tweets impacted the share price of a company?
+<h1> Have tweets impacted the share price of a company?</h1>
 <br>
 <br>
 <b>Used Stack while Development</b>: <br>
@@ -18,7 +18,7 @@ Python 3.5.2<br>
 <b>Starting Point</b> <br>
 SetUp Create Database and Basic Data (e.g. Sectors & Companies) with "create.py" and "fill.py"
 <br>
-<h2> Stock Data
+<h2> Stock Data</h2>
 Get your API key on https://www.alphavantage.co<br>
 
 <b>Historical Stock Data</b> <br>
@@ -28,7 +28,7 @@ Get Historical Daily Data Stock Data: getHistStock.py {stocksymbol}
 getStockData.py - gets 1 hour back minutely based data for as long as the variable hours in the script defines ist.
 getSectorData.py - gets minuetly based sectordata from https://www.tradingview.com/markets/indices/quotes-snp/
 
-<H2> Twitter Data
+<H2> Twitter Data</h2>
 <br>
 <b>Automatize Scripts </b> <br>
 In DB Table with followed people "people"
