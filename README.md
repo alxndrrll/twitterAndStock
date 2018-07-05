@@ -5,7 +5,7 @@ We are just updating the last links, so wait maybe a day or 2 until you clone<br
 
 <b>twitterAndStock</b><br>
 <br>
-During a project at HTW Berlin my team <b>Kristina Spiegel and Alexander Röll</b> created a projekt in 'Unternehmenssoftware' to see if tweets could impact the stock market. <br>
+During a project at HTW Berlin my team <b>Kristina Spiegel and Alexander Röll</b> and I created a projekt in 'Unternehmenssoftware' to see if tweets could impact the stock market. <br>
 
 <h1> Have tweets impacted the share price of a company?</h1>
 <br>
