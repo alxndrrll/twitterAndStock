@@ -8,8 +8,9 @@ import requests
 from bs4 import BeautifulSoup
 import mysql.connector
 from mysql.connector import errorcode
-cnx=mysql.connector.connect(user='project',password='HTW-Berlin',host='localhost',database='stock')
 
+#######build connector#######################
+cnx=mysql.connector.connect(user='###',password='###',host='localhost',database='stock')
 cursor = cnx.cursor()
 cnx.database ='stock'
 cnx.autocommit = True
