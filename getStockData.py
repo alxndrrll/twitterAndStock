@@ -17,13 +17,25 @@ import subprocess
 import shlex
 from bs4 import BeautifulSoup
 
+#Stocksymbol
+symbol=sys.argv[1]
+
+#Generate your own key as described in the read.me
+API_KEY = '###' 
+
+#edit this path to point to yout install of python3
+path= '/python3 getSectorData.py'
+
+#number of the running hours of the script
+hours=12
 #######build connector#######################
-cnx=mysql.connector.connect(user='root',password='HTW-Berlin',host='localhost',database='stock')
+cnx=mysql.connector.connect(user='###',password='###',host='localhost',database='stock')
 cursor = cnx.cursor()
 cnx.database ='stock'    
 
-hours=12
 
+
+#gets Sektor (S&P500 based on stocksymbol of of database)
 def getSectorByBrand(symbol):
     query = """select sector.sector_id, sector.sector_name 
     from brand 
@@ -58,14 +70,13 @@ def getSectorData(sector_name, sectornumber):
     cursor.execute(sql_command)
     cnx.commit()
 
-symbol=sys.argv[1]
+
 print(symbol)
 sectornumber, sector_name= getSectorByBrand(symbol)
 print(sector_name )
 print(sectornumber)
 getSectorData(sector_name, sectornumber)
 def getStockData(symbol):
-    API_KEY = 'XR919OQRJ4ME1S30'
     r = requests.get('https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=' + symbol + '&interval=1min&apikey=' + API_KEY)
     if (r.status_code == 200):
         print( "status 200 all good")
@@ -88,12 +99,11 @@ def getStockData(symbol):
         except mysql.connector.errors.IntegrityError as e:
             print("This Data already exists in Table")
 
-symbol=sys.argv[1]
 print(symbol)
 x=1
 while(x < hours):
     getStockData(symbol)
-    subprocess.call(shlex.split('/home/sperber/anaconda3/bin/python3 getSectorData.py ' + symbol))
+    subprocess.call(shlex.split(path + symbol))
     x+=1
     time.sleep(3600)
     print('1 hour over')
