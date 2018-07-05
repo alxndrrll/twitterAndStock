@@ -2,7 +2,9 @@
 """
 Created on Mon Jun 11 11:48:44 2018
 
-Get Historical Stock Data since 2011 based on Stocksymbol of the alphavantage Data API
+Gets Daily Historical Stock Data since 2011 based on Stocksymbol of the alphavantage Data API
+Some of the data dates back to as early as the 90ties
+
 
 @author: Kalina
 """
@@ -12,16 +14,18 @@ import mysql.connector
 import sys
 from dateutil.parser import parse
 import datetime
-  
-symbol=sys.argv[1]
 
-cnx=mysql.connector.connect(user='root',password='HTW-Berlin',host='localhost',database='stock')
+#Use stocksymbol when calling this script
+symbol=sys.argv[1]
+#Generate your own key as described in the read.me
+API_KEY = '###' 
+
+
+cnx=mysql.connector.connect(user='###',password='###',host='localhost',database='stock')
 cursor = cnx.cursor()
-cnx.database ='stock' 
 
 start_date=datetime.datetime(2011, 1, 1)
 
-API_KEY = 'XR919OQRJ4ME1S30'
 r = requests.get('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol='+ symbol +'&outputsize=full&apikey=' + API_KEY)
 print(r)
 if (r.status_code == 200): 
